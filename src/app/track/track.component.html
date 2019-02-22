@@ -1,0 +1,8 @@
+<div class=" track row " *ngFor="let item of finaldata">
+  <div class="col-md-8">{{ item.name }}</div>
+  <div class="col-md-2">
+    <audio controls>
+      <source src="{{ item.preview_url }}}" type="audio/ogg" />
+    </audio>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="content row">
+  <div
+    *ngFor="let item of value"
+    class="col-md-3 "
+    routerLink="{{ item.id }}"
+    routerLinkActive="active"
+  >
+    <div class="list">
+      <div>Name: {{ item.name }}</div>
+      <div>Genres: {{ item.genres }}</div>
+      <div>Popularty: {{ item.popularity }}</div>
+      <div class="img">
+        <img src="{{ item.images[0]?.url }}" alt="" class="img-thumbnail" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
